@@ -1,25 +1,24 @@
 # Universal-Machine-Time-UMT
 
-Universal Machine Time (UMT) is the first-ever onchain implementation of the precision time protocol (PTP), which enables blockchain-verified timestamps at a nanosecond precision. This function enables machines on a DePIN to sync and coordinate the timing with the PTP server, which works as the high-percision onchain clock for the entire ecosystem.
+Universal Machine Time (UMT) is the first-ever onchain implementation of the precision time protocol (PTP), which enables universal blockchain-verified timestamps at a nanosecond precision. This function enables Machines and DePINs to sync and coordinate their local time with a master clock that works as a high-percision onchain clock for the machine economy.
 
 UMT enables such use cases and functionalities as:
-- Fast and secure user and machine authentication
+- Precise machine coordination
+- Spatial awareness for AI and robots
+- Data timestamp consistency
+- Ultra-fast smart contracts
 - Decentralized time coordination
-- Precise resource management
-- High-frequency trading
 - And more
-
-With its onchain PTP implementation, peaq unlocks highest imaginable timing precision for the DePIN sector.
 
 ## About UMT
 
 ### Precision Time Protocol (PTP) Implementation
 
-UMT implements a modified version of the IEEE 1588 Precision Time Protocol (PTP) to achieve nanosecond-level time synchronization across the network. This implementation uses a master clock server that derives its time from the blockchain, providing a trustless and decentralized time source.
+UMT implements a modified version of the IEEE 1588 Precision Time Protocol (PTP) to achieve nanosecond-level time synchronization. This implementation uses a master clock server that derives its time from the blockchain, providing a trustless and decentralized time source.
 
 #### PTP Algorithm Overview
 
-Our implementation follows the core principles of PTP while adapting them for blockchain-based time synchronization:
+The implementation follows the core principles of PTP while adapting them for blockchain-based time synchronization:
 
 1. **Master-Slave Architecture**: A designated master clock server maintains the reference time derived from blockchain timestamps.
 
@@ -56,8 +55,8 @@ Our implementation follows the core principles of PTP while adapting them for bl
 
 The UMT server maintains a persistent connection to the blockchain network using the following mechanisms:
 
-1. **Polkadot.js API Integration**:
-   - The server connects to the peaq network using the `@polkadot/api` library
+1. **API Integration**:
+   - The server connects to the peaq blockchain using the `@polkadot/api` library
    - Establishes a WebSocket connection to the blockchain node
    - Manages connection lifecycle with proper error handling and reconnection logic
 
@@ -72,11 +71,11 @@ The UMT server maintains a persistent connection to the blockchain network using
    - Elapsed time since last block is calculated using high-precision local clock
    - Time drift is continuously monitored and compensated
 
-This architecture provides a reliable time synchronization mechanism with precision suitable for timestamps in distributed applications, IoT devices, and blockchain transactions where accurate time is critical.
+This architecture provides a reliable time synchronization mechanism with precision suitable for timestamps in distributed applications, robots, vehicles, drones, machines, devices, and blockchain transactions where highly precise time sync is critical.
 
 ## Using UMT with the peaq SDK
 
-UMT is readily available through the peaq SDK, allowing any machine to easily integrate with this precise timekeeping mechanism.
+UMT is available through the peaq SDK, allowing any Machine or DePIN to easily integrate and sync with the high precision clock.
 
 ### SDK Implementation
 
@@ -163,4 +162,4 @@ To experience the power of UMT synchronization:
 
 4. Observe how both servers now display identical nanosecond-level timestamps, despite running on different processes/machines
 
-The synchronization process connects each server to the peaq network's PTP master clock, which derives its time from the blockchain. This creates a trustless, decentralized time reference that all machines can agree upon with nanosecond precision, enabling critical time-dependent applications in the DePIN ecosystem.
+The synchronization process connects each server to peaq's PTP master clock, which derives its time from the blockchain. This creates a trustless, decentralized time reference that all machines can agree upon with nanosecond precision.
