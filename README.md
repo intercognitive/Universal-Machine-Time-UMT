@@ -75,7 +75,7 @@ This architecture provides a reliable time synchronization mechanism with precis
 
 ## Using UMT with the peaq SDK
 
-UMT is available through the peaq SDK, allowing any Machine or DePIN to easily integrate and sync with the high precision clock.
+UMT is available through the [peaq SDK](https://docs.peaq.network/docs/build/sdk/modules/ptp/), allowing any Machine or DePIN to easily integrate and sync with the high precision clock.
 
 ### SDK Implementation
 
