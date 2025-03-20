@@ -1,4 +1,4 @@
-# UMT
+# Universal-Machine-Time-UMT
 
 Universal Machine Time (UMT) is the first-ever onchain implementation of the precision time protocol (PTP), which enables universal blockchain-verified timestamps at a nanosecond precision. This function enables Machines and DePINs to sync and coordinate their local time with a master clock that works as a high-percision onchain clock for the machine economy.
 
