@@ -14,7 +14,7 @@ UMT enables such use cases and functionalities as:
 
 ### Precision Time Protocol (PTP) Implementation
 
-UMT implements a modified version of the IEEE 1588 Precision Time Protocol (PTP) to achieve nanosecond-level time synchronization. This implementation uses a master clock server that derives its time from the blockchain, providing a trustless and decentralized time source.
+UMT implements a modified version of the IEEE 1588 Precision Time Protocol (PTP) with the aim to achieve nanosecond-level time synchronization. This implementation uses a master clock server that derives its time from the blockchain, providing a trustless and decentralized time source.
 
 #### PTP Algorithm Overview
 
